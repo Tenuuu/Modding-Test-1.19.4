@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "moddingtest",
+	"version": "${version}",
+	"name": "Modding Test",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Tenu"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/moddingtest/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tenu.moddingtest.ModdingTest"
+		],
+		"client": [
+			"net.tenu.moddingtest.ModdingTestClient"
+		],
+		"fabric-datagen": [
+			"net.tenu.moddingtest.ModdingTestDataGenerator"
+		]
+	},
+	"mixins": [
+		"moddingtest.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.18",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
