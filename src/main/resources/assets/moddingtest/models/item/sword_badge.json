@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "moddingtest:item/badge"
+    "layer0": "moddingtest:item/sword_badge"
   }
 }

@@ -11,7 +11,9 @@ import net.minecraft.util.Identifier;
 import net.tenu.moddingtest.ModdingTest;
 
 public class ModItems {
-    public static final Item BADGE = registerItem("badge",
+    public static final Item SWORD_BADGE = registerItem("sword_badge",
+            new Item(new FabricItemSettings()));
+    public static final Item AXE_BADGE = registerItem("axe_badge",
             new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
@@ -19,7 +21,7 @@ public class ModItems {
     }
 
     public static void addItemsToItemGroup() {
-        addToItemGroup(ItemGroups.INGREDIENTS, BADGE);
+        addToItemGroup(ItemGroups.INGREDIENTS, SWORD_BADGE);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
@@ -28,5 +30,7 @@ public class ModItems {
 
     public static void registerModItems() {
         ModdingTest.LOGGER.info("Registering mod items for " + ModdingTest.MOD_ID);
+
+        addItemsToItemGroup();
     }
 }
