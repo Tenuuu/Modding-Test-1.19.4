@@ -3,6 +3,7 @@ package net.tenu.moddingtest;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.item.ItemGroup;
+import net.tenu.moddingtest.block.ModBlocks;
 import net.tenu.moddingtest.item.ModItemGroup;
 import net.tenu.moddingtest.item.ModItems;
 import org.slf4j.Logger;
@@ -16,5 +17,6 @@ public class ModdingTest implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

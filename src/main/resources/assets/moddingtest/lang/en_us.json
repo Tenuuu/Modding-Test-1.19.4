@@ -1,6 +1,7 @@
 {
   "item.moddingtest.axe_badge": "Axe Badge",
   "item.moddingtest.sword_badge": "Sword Badge",
+  "block.moddingtest.reinforced_wood": "Reinforced Wood",
 
   "itemgroup.badges": "Badges"
 }
