@@ -22,6 +22,10 @@ public class ModItems {
 
     public static void addItemsToItemGroup() {
         addToItemGroup(ItemGroups.INGREDIENTS, SWORD_BADGE);
+        addToItemGroup(ItemGroups.INGREDIENTS, AXE_BADGE);
+
+        addToItemGroup(ModItemGroup.BADGES, SWORD_BADGE);
+        addToItemGroup(ModItemGroup.BADGES, AXE_BADGE);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {

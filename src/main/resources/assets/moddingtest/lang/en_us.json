@@ -1,3 +1,6 @@
 {
-  "item.moddingtest.sword_badge": "Sword Badge"
+  "item.moddingtest.axe_badge": "Axe Badge",
+  "item.moddingtest.sword_badge": "Sword Badge",
+
+  "itemgroup.badges": "Badges"
 }
