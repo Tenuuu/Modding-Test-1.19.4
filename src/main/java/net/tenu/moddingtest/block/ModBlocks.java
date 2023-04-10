@@ -18,6 +18,9 @@ public class ModBlocks {
     public static final Block REINFORCED_WOOD = registerBlock("reinforced_wood",
             new Block(FabricBlockSettings.of(Material.WOOD).strength(4.0f).requiresTool()), ModItemGroup.BADGES);
 
+    public static final Block REINFORCED_STONE = registerBlock("reinforced_stone",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).requiresTool().luminance(6)), ModItemGroup.BADGES);
+
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
