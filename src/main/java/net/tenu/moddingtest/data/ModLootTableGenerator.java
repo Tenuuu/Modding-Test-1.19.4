@@ -13,6 +13,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.REINFORCED_WOOD);
+        addDrop(ModBlocks.REINFORCED_STONE);
 
         addDrop(ModBlocks.REINFORCED_WOOD, oreDrops(ModBlocks.REINFORCED_WOOD, ModItems.SWORD_BADGE));
         addDrop(ModBlocks.REINFORCED_STONE, oreDrops(ModBlocks.REINFORCED_STONE, ModItems.AXE_BADGE));
