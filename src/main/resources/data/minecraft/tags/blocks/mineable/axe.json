@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "moddingtest:reinforced_wood"
+    "moddingtest:reinforced_wood",
+    "moddingtest:truffula_log",
+    "moddingtest:truffula_wood",
+    "moddingtest:stripped_truffula_log",
+    "moddingtest:stripped_truffula_log",
+    "moddingtest:truffula_planks"
   ]
 }

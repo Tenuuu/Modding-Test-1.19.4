@@ -2,8 +2,9 @@ package net.tenu.moddingtest;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.minecraft.item.ItemGroup;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.tenu.moddingtest.block.ModBlocks;
+import net.tenu.moddingtest.block.ModFlammableBlockRegistry;
 import net.tenu.moddingtest.item.ModItemGroup;
 import net.tenu.moddingtest.item.ModItems;
 import org.slf4j.Logger;
@@ -18,5 +19,10 @@ public class ModdingTest implements ModInitializer {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModFlammableBlockRegistry.registerFlammableBlocks();
+
+		StrippableBlockRegistry.register(ModBlocks.TRUFFULA_LOG, ModBlocks.STRIPPED_TRUFFULA_LOG);
+		StrippableBlockRegistry.register(ModBlocks.TRUFFULA_WOOD, ModBlocks.STRIPPED_TRUFFULA_WOOD);
 	}
 }

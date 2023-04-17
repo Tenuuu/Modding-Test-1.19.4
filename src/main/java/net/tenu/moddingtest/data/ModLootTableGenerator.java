@@ -15,6 +15,15 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.REINFORCED_WOOD);
         addDrop(ModBlocks.REINFORCED_STONE);
 
+        addDrop(ModBlocks.TRUFFULA_LOG);
+        addDrop(ModBlocks.TRUFFULA_WOOD);
+        addDrop(ModBlocks.STRIPPED_TRUFFULA_LOG);
+        addDrop(ModBlocks.STRIPPED_TRUFFULA_WOOD);
+        addDrop(ModBlocks.TRUFFULA_PLANKS);
+        addDrop(ModBlocks.TRUFFULA_TUFT);
+        addDrop(ModBlocks.TRUFFULA_SAPLING);
+
+
         addDrop(ModBlocks.REINFORCED_WOOD, oreDrops(ModBlocks.REINFORCED_WOOD, ModItems.SWORD_BADGE));
         addDrop(ModBlocks.REINFORCED_STONE, oreDrops(ModBlocks.REINFORCED_STONE, ModItems.AXE_BADGE));
     }
