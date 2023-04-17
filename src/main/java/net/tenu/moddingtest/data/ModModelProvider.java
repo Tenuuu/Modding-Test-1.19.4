@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.Item;
 import net.tenu.moddingtest.block.ModBlocks;
 import net.tenu.moddingtest.item.ModItems;
 
@@ -30,5 +31,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.SWORD_BADGE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AXE_BADGE, Models.GENERATED);
+
+        itemModelGenerator.register(Item.fromBlock(ModBlocks.TRUFFULA_SAPLING), Models.GENERATED);
     }
 }

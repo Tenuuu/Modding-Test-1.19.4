@@ -12,6 +12,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.tenu.moddingtest.ModdingTest;
 import net.tenu.moddingtest.item.ModItemGroup;
+import net.tenu.moddingtest.world.tree.TruffulaSaplingGenerator;
 
 public class ModBlocks {
 
@@ -37,7 +38,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).strength(4.0f).requiresTool()), ModItemGroup.BADGES);
 
     public static final Block TRUFFULA_SAPLING = registerBlock("truffula_sapling",
-            new SaplingBlock(null, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()), ModItemGroup.BADGES);
+            new SaplingBlock(new TruffulaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()), ModItemGroup.BADGES);
 
 
 

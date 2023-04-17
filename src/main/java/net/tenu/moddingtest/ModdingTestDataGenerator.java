@@ -2,9 +2,14 @@ package net.tenu.moddingtest;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 import net.tenu.moddingtest.data.ModLootTableGenerator;
 import net.tenu.moddingtest.data.ModModelProvider;
 import net.tenu.moddingtest.data.ModRecipeGenerator;
+import net.tenu.moddingtest.data.ModWorldGenerator;
+import net.tenu.moddingtest.world.ModConfiguredFeatures;
+import net.tenu.moddingtest.world.ModPlacedFeatures;
 
 public class ModdingTestDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -14,5 +19,12 @@ public class ModdingTestDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTableGenerator::new);
 		pack.addProvider(ModRecipeGenerator::new);
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModWorldGenerator::new);
+	}
+
+	@Override
+	public void buildRegistry(RegistryBuilder registryBuilder) {
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }

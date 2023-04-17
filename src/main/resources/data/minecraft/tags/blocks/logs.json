@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "moddingtest:truffula_log",
+    "moddingtest:stripped_truffula_log",
+    "moddingtest:truffula_wood",
+    "moddingtest:stripped_truffula_wood"
+  ]
+}

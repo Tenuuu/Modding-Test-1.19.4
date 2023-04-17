@@ -7,6 +7,7 @@ import net.tenu.moddingtest.block.ModBlocks;
 import net.tenu.moddingtest.block.ModFlammableBlockRegistry;
 import net.tenu.moddingtest.item.ModItemGroup;
 import net.tenu.moddingtest.item.ModItems;
+import net.tenu.moddingtest.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,6 +20,8 @@ public class ModdingTest implements ModInitializer {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModWorldGeneration.generateModWorldGen();
 
 		ModFlammableBlockRegistry.registerFlammableBlocks();
 
