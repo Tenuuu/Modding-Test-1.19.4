@@ -16,6 +16,9 @@ public class ModItems {
     public static final Item AXE_BADGE = registerItem("axe_badge",
             new Item(new FabricItemSettings()));
 
+    public static final Item COMMON_KEY = registerItem("common_key",
+            new Item(new FabricItemSettings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ModdingTest.MOD_ID, name), item);
     }
@@ -26,6 +29,7 @@ public class ModItems {
 
         addToItemGroup(ModItemGroup.BADGES, SWORD_BADGE);
         addToItemGroup(ModItemGroup.BADGES, AXE_BADGE);
+        addToItemGroup(ModItemGroup.BADGES, COMMON_KEY);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {

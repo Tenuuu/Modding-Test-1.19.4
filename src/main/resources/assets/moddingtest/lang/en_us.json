@@ -2,10 +2,10 @@
   "item.moddingtest.axe_badge": "Axe Badge",
   "item.moddingtest.sword_badge": "Sword Badge",
 
+  "item.moddingtest.common_key": "Common Key",
 
   "block.moddingtest.reinforced_wood": "Reinforced Wood",
   "block.moddingtest.reinforced_stone": "Reinforced Stone",
-
 
   "block.moddingtest.truffula_log": "Truffula Log",
   "block.moddingtest.truffula_wood": "Truffula Wood",
@@ -14,7 +14,6 @@
   "block.moddingtest.truffula_planks": "Truffula Planks",
   "block.moddingtest.truffula_tuft": "Truffula Tuft",
   "block.moddingtest.truffula_sapling": "Truffula Sapling",
-
 
   "itemgroup.badges": "Badges"
 }

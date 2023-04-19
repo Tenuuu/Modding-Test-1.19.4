@@ -31,6 +31,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.SWORD_BADGE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AXE_BADGE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COMMON_KEY, Models.GENERATED);
 
         itemModelGenerator.register(Item.fromBlock(ModBlocks.TRUFFULA_SAPLING), Models.GENERATED);
     }
