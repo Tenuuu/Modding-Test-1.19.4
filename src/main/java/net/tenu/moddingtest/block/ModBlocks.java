@@ -10,6 +10,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.tenu.moddingtest.ModdingTest;
 import net.tenu.moddingtest.item.ModItemGroup;
 import net.tenu.moddingtest.world.tree.TruffulaSaplingGenerator;
@@ -21,6 +22,12 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.WOOD).strength(4.0f).requiresTool()), ModItemGroup.BADGES);
     public static final Block REINFORCED_STONE = registerBlock("reinforced_stone",
             new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).requiresTool().luminance(6)), ModItemGroup.BADGES);
+    public static final Block SWORD_ORE = registerBlock("sword_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
+                    UniformIntProvider.create(2, 6)), ModItemGroup.BADGES);
+    public static final Block DEEPSLATE_SWORD_ORE = registerBlock("deepslate_sword_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
+                    UniformIntProvider.create(2, 6)), ModItemGroup.BADGES);
 
     //////////////////////////////////// TRUFFULA TREE ////////////////////////////////////
     public static final Block TRUFFULA_LOG = registerBlock("truffula_log",
