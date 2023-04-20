@@ -18,6 +18,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REINFORCED_WOOD);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REINFORCED_STONE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RIGHT_CLICK_BLOCK);
 
         blockStateModelGenerator.registerLog(ModBlocks.TRUFFULA_LOG).log(ModBlocks.TRUFFULA_LOG).wood(ModBlocks.TRUFFULA_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_TRUFFULA_LOG).log(ModBlocks.STRIPPED_TRUFFULA_LOG).wood(ModBlocks.STRIPPED_TRUFFULA_WOOD);

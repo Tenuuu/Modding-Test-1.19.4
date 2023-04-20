@@ -12,6 +12,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.tenu.moddingtest.ModdingTest;
+import net.tenu.moddingtest.block.custom.RightClickDetectionBlock;
 import net.tenu.moddingtest.item.ModItemGroup;
 import net.tenu.moddingtest.world.tree.TruffulaSaplingGenerator;
 
@@ -28,6 +29,8 @@ public class ModBlocks {
     public static final Block DEEPSLATE_SWORD_ORE = registerBlock("deepslate_sword_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
                     UniformIntProvider.create(2, 6)), ModItemGroup.BADGES);
+    public static final Block RIGHT_CLICK_BLOCK = registerBlock("right_click_block",
+            new RightClickDetectionBlock(FabricBlockSettings.of(Material.WOOD).strength(4.0f).requiresTool()), ModItemGroup.BADGES);
 
     //////////////////////////////////// TRUFFULA TREE ////////////////////////////////////
     public static final Block TRUFFULA_LOG = registerBlock("truffula_log",
