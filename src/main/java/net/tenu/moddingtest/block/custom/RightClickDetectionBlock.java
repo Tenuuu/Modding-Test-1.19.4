@@ -28,9 +28,6 @@ public class RightClickDetectionBlock extends Block {
 
                 return ActionResult.SUCCESS;
             }
-            else {
-                player.sendMessage(Text.literal("Give me key >:("), false);
-            }
         }
 
         return ActionResult.PASS;

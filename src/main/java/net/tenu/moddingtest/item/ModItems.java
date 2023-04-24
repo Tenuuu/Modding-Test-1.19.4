@@ -2,6 +2,7 @@ package net.tenu.moddingtest.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
@@ -9,6 +10,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.tenu.moddingtest.ModdingTest;
+import net.tenu.moddingtest.item.custom.ReinforcedHelmetItem;
 
 public class ModItems {
     public static final Item SWORD_BADGE = registerItem("sword_badge",
@@ -18,6 +20,9 @@ public class ModItems {
 
     public static final Item COMMON_KEY = registerItem("common_key",
             new Item(new FabricItemSettings()));
+
+    public static final Item REINFORCED_HELMET = registerItem("reinforced_helmet",
+            new ReinforcedHelmetItem(ModArmorMaterials.REINFORCED, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ModdingTest.MOD_ID, name), item);
@@ -30,6 +35,8 @@ public class ModItems {
         addToItemGroup(ModItemGroup.BADGES, SWORD_BADGE);
         addToItemGroup(ModItemGroup.BADGES, AXE_BADGE);
         addToItemGroup(ModItemGroup.BADGES, COMMON_KEY);
+
+        addToItemGroup(ModItemGroup.BADGES, REINFORCED_HELMET);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {

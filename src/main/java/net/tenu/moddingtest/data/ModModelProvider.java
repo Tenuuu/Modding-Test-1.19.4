@@ -34,6 +34,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.AXE_BADGE, Models.GENERATED);
         itemModelGenerator.register(ModItems.COMMON_KEY, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.REINFORCED_HELMET, Models.GENERATED);
+
         itemModelGenerator.register(Item.fromBlock(ModBlocks.TRUFFULA_SAPLING), Models.GENERATED);
     }
 }
